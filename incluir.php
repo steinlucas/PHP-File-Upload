@@ -26,7 +26,7 @@
 	<?php
 	$funcionarios = pesquisarTodosFuncionarios();
 	foreach ($funcionarios as $funcionario){
-		echo $funcionario;
+		echo var_dump($funcionario);
 		
 		//echo var_dump($funcionario);
 	}
