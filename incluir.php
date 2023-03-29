@@ -1,4 +1,6 @@
-
+<?php
+	include_once("bd.php");
+?>
 <html>
 <meta charset="UTF-8">
     <head>
@@ -21,5 +23,15 @@
 		    <input type="submit" value="Enviar arquivo">
 		</form>
 	</div>
+	<?php
+	$funcionarios = pesquisarTodosFuncionarios();
+	foreach ($funcionarios as $funcionario){
+		echo $funcionario;
+		
+		//echo var_dump($funcionario);
+	}
+	
+	?>
+	
     </body>
 </html>

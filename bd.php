@@ -17,9 +17,12 @@ function salvarFuncionario(string $nome, string $foto_end){
 	mysqli_stmt_execute($stmt);
 }
 
-function pesquisarTodosFuncionarios(){
+function pesquisarTodosFuncionarios() {
     $conexao = obterConexao();
-	$result_array = [];
-	
-    return $result_array;
+    $comandoSQL = "SELECT * FROM FUNCIONARIO";
+                    
+    $query = mysqli_query($conexao, $comandoSQL);
+    $resultado = mysqli_fetch_all($query, MYSQLI_ASSOC);
+
+    return $resultado;
 }
