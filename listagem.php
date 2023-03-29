@@ -2,8 +2,6 @@
     include_once 'bd.php';        
     include_once 'utils.php';
     $lista = pesquisarTodosFuncionarios();
-    
-    
 ?>
     
 <html>
@@ -14,7 +12,7 @@
    
     <div style="text-align: center">
     <h1>Lista de Funcionários</h1>
-    <p><a href="incluir.html">Cadastrar Funcionário</a></p>
+    <p><a href="incluir.php">Cadastrar Funcionário</a></p>
         <table border=1 style="margin: 0px auto">
             <thead>
                 <tr>

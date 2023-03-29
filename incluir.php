@@ -22,14 +22,10 @@
 
 		    <input type="submit" value="Enviar arquivo">
 		</form>
+
+		<a href="listagem.php">
+    		<button>Voltar</button>
+  		</a>
 	</div>
-	<?php
-	$funcionarios = pesquisarTodosFuncionarios();
-	foreach ($funcionarios as $funcionario){
-		echo $funcionario['nome'];
-	}
-	
-	?>
-	
     </body>
 </html>
